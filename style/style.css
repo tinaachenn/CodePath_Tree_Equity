@@ -1,0 +1,51 @@
+html {
+  height: 100%;
+  width: 100%;
+  background-color: #F8F8F8;
+}
+  
+body {
+  margin: 10px;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* a:link {
+  color: black;
+}
+
+a:visited {
+  color: orange;
+}
+
+a:hover {
+  color: red;
+}
+
+a:active {
+  color:green;
+} */
+
+.header {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 10px;
+  padding: 0;
+}
+
+h1, h2, h3 { 
+  font-family: Helvetica;  
+  text-align: center;
+}
+
+.phrase { 
+  color: #027639; 
+  text-align: center;
+}
+
+.center { 
+  text-align: center;
+}
