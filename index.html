@@ -6,55 +6,82 @@
   <meta name="viewport" content="width=device-width">
   <title>Tree Equity Project</title>
   <link rel="icon" href="images/tree-icon.png">
+  <link href="reset.css" rel="stylesheet" type="text/css" />
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="reset-webview.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
   <!--- Headings --->
   <div class="header">
-    <img />
-    <h1>Tree Equity</h1>
-    <h3 class="phrase">Trees are for everyone, everywhere.</h3>
-    <button type="button" class="center">Take Action</button>
-    <button type="button" class="center">Donate Today</button>
+    <div id="header-left">
+      <img src="images/header.avif" id="header-img" />
+    </div>
+    <div id="header-right" class="center">
+      <h1>Tree Equity</h1>
+      <h3 class="phrase">Trees are for everyone, everywhere.</h3>
+      <button type="button" class="color-change" id="header-button">Take Action</button>
+      <button type="button" class="color-change" id="header-button">Donate Today</button>
+    </div>
   </div>
+
   <!--- About --->
-  <h2>What is Tree Equity and Why Does it Matter?</h2>
-  <p>Tree equity is the notion that everyone, regardless of race, socio-economic background, or location, should be able to experience the benefits that trees provide. Trees should be equally distributed and assessible in a community. Trees, in addition to providing health, recreational, and economic benefits, also play a large part in mitigating the effects of climate change. Tree equity in cities and urban environments is especially important as many low income, BIPOC, and underprivileged communitities all around the world suffer from the lack of sufficient access to trees.</p>
-  <p>This website focuses on the macrocosmic notion of tree equity and its importance before diving into Phoenix, Arizona's microcosmic tree equity stance and condition. The aim is to educate about the power of trees, their importance, and how to reach tree equity. In addition, we hope to connect you to organizations workings towards tree equity who are in need of volunteers and donations. Together, we can give everyone the trees they deserve.</p>
+  <div id="about">
+    <h2 style="font-family: Helvetica; text-align: center;">What is Tree Equity? Why Does it Matter?</h2>
+    <p>Tree equity is the notion that everyone, regardless of race, socio-economic background, or location,   
+      should beable to experience the benefits that trees provide. Trees should be equally distributed and
+      assessible in a community. Trees, in addition to providing health, recreational, and economic benefits, 
+      also play a large part in mitigating the effects of climate change. Tree equity in cities and urban 
+      environments is especially important as many low income, BIPOC, and underprivileged communitities all   
+      around the world suffer from the lack of sufficient
+      access to trees.</p>
+    <p>This website focuses on the macrocosmic notion of tree equity and its importance before diving into Phoenix,
+      Arizona's microcosmic tree equity stance and condition. The aim is to educate about the power of trees, their
+      importance, and how to reach tree equity. In addition, we hope to connect you to organizations workings towards
+      tree equity who are in need of volunteers and donations. Together, we can give everyone the trees they deserve.
+    </p>
+  </div>
   <br>
   <div class="center">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/nOJtEMevtkQ?si=55LHTLrgq5v-zmrc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-  </iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/nOJtEMevtkQ?si=55LHTLrgq5v-zmrc"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
   </div>
   <br>
 
-  <a href="learn-more.html">
+  <a class="center" href="learn-more.html">
     <h3> Learn More About Tree Equity</h3>
   </a>
-  
+
   <!---News--->
-  <!--this will help with a stretch goal, if you do not want to incorporate this, then leave it alone :)-->
-  <h3>News and Resources</h2>
-  <a class="" href="https://www.americanforests.org/our-programs/tree-equity/">
-    <article>
-      <h4>American Forests Tree Equity Program</h3>
-      <p></p>
-    </article>
-  </a>
-  <a href="https://www.treeequityscore.org/">
-    <article>
-      <h4>Calculate Your City's Tree Equity Score</h3>
-    </article>
+  <div>
+    <h3>News and Resources</h3>
+      <a class="" href="https://www.americanforests.org/our-programs/tree-equity/">
+        <article>
+          <h4>American Forests Tree Equity Program</h4>
+        </article>
+      </a>
+    <a href="https://www.treeequityscore.org/">
+      <article>
+        <h4>Calculate Your City's Tree Equity Score</h3>
+      </article>
+  </div>
+  <div class="footer">
+    <a href="https://github.com/tinaachenn">
+      <h4>Github</h4>
+    </a>
+  </div>
+    
+    <script src="script.js"></script>
 
-  <script src="script.js"></script>
-
-  <!--
+    <!--
   This script places a badge on your repl's full-browser view back to your repl's cover
   page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
   teal, blue, blurple, magenta, pink!
   -->
-  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="blurple" position="bottom-right"></script>
+    <script src="https://replit.com/public/js/replit-badge-v2.js" theme="blurple" position="bottom-right"></script>
 </body>
 
 </html>
