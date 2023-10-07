@@ -89,9 +89,9 @@ a:link {
   color: black;
 }
 
-a:visited {
+/* a:visited {
   color: orange;
-}
+} */
 
 a:hover {
   color: red;
