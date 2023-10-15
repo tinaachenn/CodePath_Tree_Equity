@@ -3,19 +3,34 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tree Equity Project</title>
-  <link rel="icon" href="images/tree-icon.png">
+  <link rel="icon" href="./images/tree-icon copy.png">
   <link href="./style/style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
+  <!-- Nav Bar -->
+  <div class="navbar-container">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="learn-more.html">Learn More</a></li>
+      <li><a href="involve.html">Get Involved</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li ><button id="theme-button" class="color-change">Toggle Dark Mode</button></li>
+    </ul>
+  </div>
+
+  <div id="spacing">
+  </div>
+
   <!--- Headings --->
-  <div class="header">
-    <div id="header-left">
-      <img src="images/header.avif" id="header-img" />
+  <div class="header-container">
+    <div class="header-item">
+      <img src="images/header.png" id="header-img" />
     </div>
-    <div id="header-right" class="center">
+    <div class="header-item">
       <h1>Tree Equity</h1>
       <h3 class="phrase">Trees are for everyone, everywhere.</h3>
       <button type="button" class="color-change" id="header-button">Take Action</button>
@@ -26,11 +41,11 @@
   <!--- About --->
   <div id="about">
     <h2 style="font-family: Helvetica; text-align: center;">What is Tree Equity? Why Does it Matter?</h2>
-    <p>Tree equity is the notion that everyone, regardless of race, socio-economic background, or location,   
+    <p>Tree equity is the notion that everyone, regardless of race, socio-economic background, or location,
       should beable to experience the benefits that trees provide. Trees should be equally distributed and
-      assessible in a community. Trees, in addition to providing health, recreational, and economic benefits, 
-      also play a large part in mitigating the effects of climate change. Tree equity in cities and urban 
-      environments is especially important as many low income, BIPOC, and underprivileged communitities all   
+      assessible in a community. Trees, in addition to providing health, recreational, and economic benefits,
+      also play a large part in mitigating the effects of climate change. Tree equity in cities and urban
+      environments is especially important as many low income, BIPOC, and underprivileged communitities all
       around the world suffer from the lack of sufficient
       access to trees.</p>
     <p>This website focuses on the macrocosmic notion of tree equity and its importance before diving into Phoenix,
@@ -49,30 +64,31 @@
   </div>
   <br>
 
-  <a class="center" href="learn-more.html">
-    <h3> Learn More About Tree Equity</h3>
-  </a>
-
   <!---News--->
-  <div>
+  <div class="resources-container">
     <h3>News and Resources</h3>
-      <a class="" href="https://www.americanforests.org/our-programs/tree-equity/">
-        <article>
-          <h4>American Forests Tree Equity Program</h4>
-        </article>
-      </a>
+    <a class="" href="https://www.americanforests.org/our-programs/tree-equity/">
+      <article>
+        <h4>American Forests Tree Equity Program</h4>
+      </article>
+    </a>
     <a href="https://www.treeequityscore.org/">
       <article>
         <h4>Calculate Your City's Tree Equity Score</h3>
       </article>
   </div>
-  <div class="footer">
-    <a href="https://github.com/tinaachenn">
-      <h4>Github</h4>
+
+  <div id="spacing">
+  </div>
+  
+  <!-- Footer -->
+   <div id="footer">
+    <a href="https://courses.codepath.org/courses/web101/pages/bootcamp_structure">
+      <h4>Code Path Portal</h4>
     </a>
   </div>
-    
-    <script src="script.js"></script>
+
+  <script src="./scripts/main.js"></script>
 </body>
 
 </html>
