@@ -119,6 +119,38 @@ body {
   padding-right: 50px;
 }
 
+.petition {
+  margin: 20px;
+  padding: 30px 50px;
+  background-color: #00A86B;
+  /* border: 2px solid red; */
+}
+
+.petition-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  padding-bottom: 30px;
+  /* border: 2px solid red; */
+}
+
+.petition-para {
+  width: 55%;
+  padding-right: 10px;
+  /* border: 2px solid red; */
+}
+
+.signature {
+  width: 45%;
+  padding-right: 10px;
+  /* border: 2px solid red; */
+}
+
+#sign-now-button {
+  margin: 10px;
+}
+
 .resources-container {
   display: flex;
   flex-direction: column;
@@ -128,6 +160,7 @@ body {
   padding-top: 0px;
   /* border: solid 1px red; */
 }
+
 #footer {
   position: fixed;
   left: 0;
