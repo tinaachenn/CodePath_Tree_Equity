@@ -192,14 +192,17 @@ a:link {
   color: black;
 }
 
-/* a:visited {
-  color: #FFD700;
-} */
-
 a:hover {
   color: red;
 }
 
 a:active {
   color: green;
+}
+
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  background:pink;
 }
