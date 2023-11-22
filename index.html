@@ -12,29 +12,27 @@
 
 <body>
   <!-- Nav Bar -->
-  <div class="navbar-container">
+  <div id="navbar-container">
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="learn-more.html">Learn More</a></li>
       <li><a href="involve.html">Get Involved</a></li>
       <li><a href="about.html">About Us</a></li>
-      <li ><button id="theme-button" class="color-change">Toggle Dark Mode</button></li>
+      <li><button id="theme-button" class="color-change">Toggle Dark Mode</button></li>
+      <!-- <li><button id="reduce-motion-button" class="color-change">Reduce Motion</button></li> -->
     </ul>
   </div>
 
-  <div id="spacing">
-  </div>
-
   <!--- Headings --->
-  <div class="header-container">
+  <div id="header-container">
     <div class="header-item">
       <img src="images/header.png" id="header-img" />
     </div>
-    <div class="header-item">
+    <div id="header-item">
       <h1>Tree Equity</h1>
-      <h3 class="phrase">Trees are for everyone, everywhere.</h3>
-      <button type="button" class="color-change" id="header-button">Take Action</button>
-      <button type="button" class="color-change" id="header-button">Donate Today</button>
+      <h3 id="phrase">Trees are for everyone, everywhere.</h3>
+      <button type="button" class="color-change" id="header-action">Take Action</button>
+      <button type="button" class="color-change" id="header-donate">Donate Today</button>
     </div>
   </div>
 
@@ -55,7 +53,7 @@
     </p>
   </div>
   <br>
-  <div class="center">
+  <div class="center" id="yt-video">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/nOJtEMevtkQ?si=55LHTLrgq5v-zmrc"
       title="YouTube video player" frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -64,18 +62,45 @@
   </div>
   <br>
 
+  <div id="tree-equity-cities" class="revealable">
+    <div id="cities-header">
+      <h2>American Forests x American Cities</h2>
+    </div>
+    <div id="cities">
+      <div id="baltimore">
+        <h3>Baltimore, Maryland</h3>
+        <img src="./images/baltimore.jpeg" id="baltimore-img" />
+        <p>American Forests is working with the Baltimore Tree Trust and the Maryland Department of Labor to establish 
+          the Baltimore City Community Foresty Corps, a pre-apprenticeship program related to urban forestry.</p>
+      </div>
+      <div id="boston">
+        <h3>Boston, Massachusetts</h3>
+        <img src="./images/boston.jpeg" id="boston-img" />
+        <p>American Forests is bringing a Tree Equity approach to help Boston develop a plan to create and maintain a 
+          thriving, sustainable, urban forest.</p>
+      </div>
+      <div id="phoenix">
+        <h3>Phoenix, Arizona</h3>
+        <img src="./images/phoenix.jpeg" id="phoenix-img" />
+        <p>American Forests, the City of Phoenix, and the Arizona Sustainability Alliance are co-leading a coaltion of 
+          partners to address extreme heat by advancing Tree Equity throughout Maricopa County.</p>
+      </div>
+    </div>
+  </div>
   <!--- Petition  --->
-  <div class="petition" id="petition">
+  <div class="petition revealable" id="petition">
 
     <h2>Sign Our Petition 📢</h2>
     <p id="counter">"🖊️ 3 people have signed this petition and support this cause."</p>
     <div class="petition-container">
 
       <div class="petition-para">
-        <p>Trees are vital to our planet and we are committed to protecting them. We believe everyone deserves the right
-          to enjoy the benefits of a healthy and prospering urban forest. Together, we can ensure that trees not only
-          stay a focus as cities grow, but receive the necessary funding and maintenance to remain healthy. By signing
-          this petition, you are taking action to promote the importance of tree equity and protect the health and
+        <p>Trees are vital to our planet and we are committed to protecting them.
+          We believe everyone deserves the right to enjoy the benefits of a healthy
+          and prospering urban forest. Together, we can ensure that trees not only
+          stay a focus as cities grow, but receive the necessary funding and
+          maintenance to remain healthy. By signing this petition, you are
+          taking action to promote the importance of tree equity and protect the health and
           sustainability of our forests, city, and citizens.
         </p>
       </div>
@@ -101,20 +126,26 @@
   </div>
 
   <!---News--->
-  <div class="resources-container">
+  <div id="resources-container">
     <h3>News and Resources</h3>
-    <a class="" href="https://www.americanforests.org/our-programs/tree-equity/">
-      <article>
-        <h4>American Forests Tree Equity Program</h4>
-      </article>
-    </a>
-    <a href="https://www.treeequityscore.org/">
-      <article>
-        <h4>Calculate Your City's Tree Equity Score</h3>
-      </article>
+    <div>
+      <a href="https://www.americanforests.org/our-programs/tree-equity/">American Forests Tree Equity Program</a>
+      <a href="https://www.treeequityscore.org/">Calculate Your City's Tree Equity Score</a>
+    </div>
   </div>
 
-  <div id="spacing">
+  <!-- modal -->
+  <div id="thanks-modal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div id="modal-text-container">
+        <p id="modal-text-container-p">Thank you for signing our petition!</p>
+        <!-- button here (stretch feature) -->
+        <!-- <button id="modalButton">Close</button> -->
+      </div>
+      <img src="./images/tree-equity.jpg" id="modal-image">
+    </div>
+
   </div>
   
   <!-- Footer -->

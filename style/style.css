@@ -1,56 +1,55 @@
 html {
   height: 100%;
   width: 100%;
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
 }
 
 body {
-  margin: -10px;
-  padding: 10px;
+  margin: 0px;
+  padding: 0px;
 }
 
-#spacing {
-  width: 100%;
-  height: 50px;
-}
-
-.navbar-container {
+#navbar-container {
   display: flex;
   flex-direction: row;
   list-style-type: none;
   overflow: hidden;
-  position: fixed;
+  position: relative;
   top: 0;
   width: 100%;
+  margin: 0px;
+  padding: 0px;
   background-color: #027639;
   /* border: 1px red solid; */
 }
 
-.navbar-container ul {
+/* .navbar-container ul {
   margin: 8px;
-}
+} */
 
-.navbar-container li {
+#navbar-container li {
   display: inline-block;
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
   font-weight: bold;
-  margin: 0 5px;
+  /* margin: 0 5px; */
 }
 
-.navbar-container a {
+#navbar-container a {
+  display: block;
   color: white;
   text-align: center;
-  padding: 5px 5px;
+  padding: 3px 5px;
   text-decoration: none;
 }
 
-.navbar-container a:hover {
-  background-color: #F8F8F8;
+#navbar-container a:hover {
+  background-color: none;
+  color: black;
 }
 
 /* Add style to button */
-#theme-button {
+#navbar-container button {
   margin: 5px;
   padding: 10px;
   padding-left: 20px;
@@ -63,12 +62,11 @@ body {
 }
 
 .dark-mode {
-  background-color: black;
-  color: white;
-
+  background-color: #040d12 !important;
+  color: #eeeeee !important;
 }
 
-.header-container {
+#header-container {
   display: flex;
   flex-direction: column;
   font-family: Helvetica;
@@ -78,11 +76,11 @@ body {
   /* border: solid 1px red; */
 }
 
-.header-item:nth-of-type(1) {
+#header-item:nth-of-type(1) {
   width: 100%;
 }
 
-.header-item:nth-of-type(2) {
+#header-item:nth-of-type(2) {
   width: 100%;
 }
 
@@ -95,7 +93,8 @@ body {
   /* border: 10px red solid; */
 }
 
-#header-button {
+#header-action,
+#header-donate {
   margin: 5px;
   padding: 10px;
   padding-left: 20px;
@@ -103,13 +102,12 @@ body {
   border: 2px;
   border-radius: 10px;
   font-weight: bold;
-  /* background-color: #FFD700; */
   cursor: pointer;
 }
 
 #about {
   background-color: #027639;
-  color: #F0F0F0;
+  color: #f0f0f0;
   border: 2px;
   border-radius: 15px;
   margin-left: 50px;
@@ -119,10 +117,70 @@ body {
   padding-right: 50px;
 }
 
+#yt-video {
+  margin: 10px;
+}
+
+#tree-equity-cities {
+  background-color: #027639;
+  color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  /* border: 1px red solid; */
+}
+
+#tree-equity-cities #cities-header {
+  text-align: center;
+  /* border: 1px blue solid; */
+}
+
+#tree-equity-cities #cities {
+  display: flex;
+  align-content: space-evenly;
+  /* padding: 10px; */
+  /* border: 1px blue solid; */
+}
+
+#tree-equity-cities #cities #baltimore,
+#phoenix,
+#boston {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px blue solid; */
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  width: 33%;
+  border: 2px;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  color: black;
+}
+
+#tree-equity-cities #cities #baltimore img,
+#phoenix img,
+#boston img {
+  height: 280px;
+  width: 100%;
+  margin-bottom: 10px;
+  z-index: 1;
+  /* width: 100px; */
+}
+
+#tree-equity-cities #cities #baltimore h4,
+#phoenix h4,
+#boston h4 {
+  z-index: 0;
+}
+
 .petition {
   margin: 20px;
   padding: 30px 50px;
-  background-color: #00A86B;
+  /* background-color: #00A86B; */
+  background-color: #eeeeee;
+  color: black;
   /* border: 2px solid red; */
 }
 
@@ -151,14 +209,91 @@ body {
   margin: 10px;
 }
 
-.resources-container {
+#resources-container {
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  background-color: #027639;
+  /* border: solid 1px red; */
+}
+
+#resources-container div {
   display: flex;
   flex-direction: column;
   font-family: Helvetica;
-  text-align: center;
-  margin-bottom: 0px;
-  padding-top: 0px;
   /* border: solid 1px red; */
+}
+
+#resources-container a {
+  margin: 0px;
+  padding-bottom: 10px;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  /* border: solid 1px red; */
+}
+
+#resources-container a:hover {
+  color: red;
+}
+
+.modal {
+  display: none; /* hides the modal from view by default*/
+  position: fixed; /* keeps the modal in one place */
+  z-index: 2; /* positions the modal on top of all other elements on the screen */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.4
+  ); /* 40% opacity black - other elements can still be seen */
+  flex-direction: column; /* these flexbox rules center the content on the screen */
+  align-items: center;
+  justify-content: center;
+}
+
+/* box that contains all the content and images */
+.modal-content {
+  background-color: lightsteelblue; /* update the colors and font sizes as you like */
+  color: black;
+  text-align: center;
+  font-size: 3rem;
+  display: flex; /* adds flexbox to center all items */
+  justify-content: space-evenly;
+  align-items: center;
+  width: 1200px;
+  height: 400px;
+  border-radius: 10px;
+}
+
+#thanks-modal-content {
+  width: 20rem; /* sets a default width for the text container */
+}
+
+#modal-text-container {
+  display: flex; /* adds flexbox to align the text and buttons (stretch feature) */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+  /* border: 2px red solid; */
+}
+
+#thanks-modal img {
+  width: 100%;
+  height: 100%;
+}
+
+#thanks-modal p {
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  /* border: 2px solid red; */
 }
 
 #footer {
@@ -167,11 +302,11 @@ body {
   bottom: 0;
   width: 100%;
   padding-left: 20px;
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   text-decoration: none;
 }
 
-.phrase {
+#phrase {
   color: #027639;
 }
 
@@ -180,29 +315,188 @@ body {
 }
 
 .color-change:hover {
-  background-color: #FFD700;
-  color: #F8F8F8;
+  background-color: #ffd700;
+  color: #f8f8f8;
 }
 
 a {
   text-decoration: none;
 }
 
-a:link {
-  color: black;
-}
-
-a:hover {
-  color: red;
-}
-
-a:active {
-  color: green;
-}
-
 .error {
   border-style: solid;
   border-width: 2px;
   border-color: red;
-  background:pink;
+  background: pink;
+}
+
+.revealable {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+/* styling for about page */
+#about-div {
+  height: 700px;
+  font-weight: bold;
+  font-family: Helvetica;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#about-div h1 {
+  margin-top: 30px;
+}
+
+#about-content {
+  padding: 10px;
+}
+
+#about-content p {
+  margin: 0px;
+  padding: 10px;
+}
+
+/* styling for get involved page */
+#involve-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#involve-div h1 {
+  font-family: Helvetica;
+  margin-top: 30px;
+}
+
+#involve-div button {
+  margin: 5px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 2px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#GI-takeAction,
+#GI-support,
+#GI-partner {
+  width: 80%;
+  height: 400px;
+  background-color: #027639;
+  border-radius: 10px;
+  margin: 15px;
+  color: #f8f8f8;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* border: 2px solid red; */
+}
+
+#GI-takeAction img,
+#GI-support img,
+#GI-partner img {
+  /* width: 400px; */
+  /* height: 300px; */
+  width: 90%;
+  height: 80%;
+  margin-top: 40px;
+  margin-left: 10px;
+  padding: 0px;
+  display: flex;
+  /* border: 2px solid red; */
+}
+
+.GI-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+  padding: 20px;
+  width: 50%;
+  height: 85%;
+  font-size: 20px;
+  /* border: 2px solid red; */
+}
+
+.GI-content a {
+  margin: 5px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 2px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: Helvetica;
+  text-decoration: none;
+  color: black;
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+
+/* styling for the learn more page */
+#learn-more-div {
+  font-weight: bold;
+  background-color: #027639;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#data-h1 {
+  font-family: Helvetica;
+}
+
+.div-styling {
+  margin: 10px;
+  padding: 10px;
+  background-color: #eeeeee;
+  border-radius: 10px;
+  font-family: sans-serif;
+}
+
+#data-div img,
+#data-why img {
+  width: 500px;
+  height: 300px;
+  margin: 10px;
+}
+#data-why li {
+  font-family: sans-serif;
+  margin: 10px;
+}
+
+#data-why h3 {
+  margin-left: 40px;
+}
+
+span {
+  color: #027639;
+}
+
+#data-div a {
+  text-decoration: none;
+  color: red;
+}
+
+#data-div p {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+#data-div a:hover {
+  color: #ffd700;
 }
